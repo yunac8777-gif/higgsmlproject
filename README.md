@@ -1,5 +1,4 @@
 # Higgs Boson ML project
-The overall research question
 
 How effectively can machine learning distinguish Higgs-boson signal events from background events, and how much does physics-informed feature engineering improve the classification?
 

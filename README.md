@@ -40,7 +40,11 @@ The project begins by examining:
 * Feature correlations
 * Differences in feature distributions between signal and background
 
-### 2. Baseline: Logistic Regression
+The invariant mass distribution shows differences between signal and background events.
+
+![Invariant Mass Distribution](figures/m_wwbb_distribution.png)
+
+### 2. Initial Baseline Model: Logistic Regression
 
 Logistic regression was used as a simple linear baseline.
 
@@ -52,6 +56,10 @@ The model achieved:
 | Precision | 0.639 |
 | Recall    | 0.737 |
 | ROC-AUC   | 0.683 |
+
+The ROC curve illustrates the classification performance of the logistic regression baseline.
+
+![Logistic Regression ROC Curve](figures/logistic_regression_roc.png)
 
 ### 3. Random Forest
 

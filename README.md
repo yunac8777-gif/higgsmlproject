@@ -156,10 +156,10 @@ higgs-ml/
 ├── data/
 ├── figures/
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_baseline_model.ipynb
-│   ├── 03_random_forest.ipynb
-│   └── 04_neural_network.ipynb
+│   ├── prelim.ipynb
+│   ├── logistic regression model.ipynb
+│   ├── random forest model.ipynb
+│   └── neural network model.ipynb
 ├── src/
 ├── .gitignore
 └── README.md

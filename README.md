@@ -115,7 +115,6 @@ The main performance improvement comes from moving from a linear model to nonlin
 
 Random Forest feature importance is used to identify which variables contribute most strongly to the model's predictions.
 ![Random Forest Feature Importance](figures/random_forest_feature_importance.png)
-![description](figures/random_forest_feature_importance.png)
 
 This provides an interpretable connection between the machine-learning results and the underlying physics, while recognising that correlated features can affect impurity-based importance measures.
 

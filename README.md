@@ -92,7 +92,6 @@ Results:
 The neural network slightly outperformed the Random Forest, but the improvement was small compared with the gain obtained by moving from the linear baseline to nonlinear models.
 
 ---
-
 ## Physics-Informed Feature Engineering
 
 A central experiment compared Random Forest performance using:
@@ -102,20 +101,25 @@ A central experiment compared Random Forest performance using:
 
 ### Results
 
-![Feature Set Comparison](figures/feature_comparison.csv)
+| Feature Set | ROC-AUC |
+| ----------- | ------: |
+| Low-level features only | 0.701 |
+| All 28 features | **0.802** |
 
 Adding the high-level physics-derived features increased ROC-AUC by approximately **0.10**.
 
 This demonstrates that the representation of the physics information supplied to the model has a substantial effect on classification performance.
 
 ---
-
 ## Model Comparison
 
+| Model | Accuracy | Precision | Recall | ROC-AUC |
+| ----- | -------: | -------: | -----: | ------: |
+| Logistic Regression | 0.641 | 0.639 | 0.737 | 0.683 |
+| Random Forest | 0.724 | 0.733 | 0.750 | 0.802 |
+| Neural Network | **0.729** | **0.748** | 0.735 | **0.807** |
 
-![Model Performance Comparison](figures/model_comparison.csv)
-The main performance improvement comes from moving from a linear model to nonlinear models. The neural network provides only a marginal improvement over the Random Forest.
-
+The main performance improvement comes from moving from a linear model to nonlinear models. The neural network provides only a marginal improvement over the Random Forest, despite using a substantially different modelling approach.
 
 ---
 
@@ -161,7 +165,6 @@ This provides an interpretable connection between the machine-learning results a
 
 ```text
 higgs-ml/
-├── data/
 ├── figures/
 ├── notebooks/
 │   ├── prelim.ipynb
